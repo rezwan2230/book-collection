@@ -4,7 +4,6 @@ import { getAllPosts } from "@/services/postServices";
 
 const HomePage = async() => {
   const posts = await getAllPosts("isr")
-  console.log(posts);
   return (
     <div className="">
       <Banner/>
