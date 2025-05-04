@@ -22,7 +22,7 @@ export const getAllPosts = async (type?: string, wait = false) => {
     throw new Error("Failed to fetch post data");
   }
   if (wait) {
-    delay(2000);
+    delay(1000);
   }
   return res.json();
 };
